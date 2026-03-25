@@ -97,6 +97,25 @@ h4, h5 {
   overflow: hidden;
 }
 
+/* Centered Task Form Container */
+.glass-card-task-form {
+  width: 90vw;
+  max-width: var(--max-width);
+  margin: 4rem auto 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2.5rem;
+}
+
+.glass-card-task-form .task-form {
+  width: 100%;
+  max-width: 600px;
+  padding: 0;
+}
+
 .glass-card::before {
   content: '';
   position: absolute;

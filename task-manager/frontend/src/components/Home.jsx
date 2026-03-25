@@ -56,7 +56,7 @@ const Home = ({ onAdd, tasks, onDelete }) => {
           {alertMsg}
         </div>
       )}
-      <div className="glass-card task-form">
+      <div className="glass-card glass-card-task-form">
         <AddTask onAdd={onAdd} showSuccess={showSuccess} showError={showError} />
       </div>
       <section className="tasks-container">
