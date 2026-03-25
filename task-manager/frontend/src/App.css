@@ -1,0 +1,13 @@
+/* Minimal App.css - Futuristic Task Manager */
+/* All main styles in index.css */
+
+.App {
+  min-height: 100vh;
+}
+
+/* Component specific overrides if needed */
+.glass-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
