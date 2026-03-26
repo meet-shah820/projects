@@ -260,6 +260,25 @@ h4, h5 {
   position: relative;
 }
 
+.task-checkbox {
+  width: 20px;
+  height: 20px;
+  margin-right: 1rem;
+  accent-color: var(--success);
+  cursor: pointer;
+  transform: scale(1.2);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 4px;
+  appearance: none;
+}
+
+.task-checkbox:checked {
+  background: var(--success);
+  border-color: var(--success-glow);
+  box-shadow: 0 0 10px var(--success);
+}
+
 .single-task:nth-child(even) {
   animation-delay: 0.1s;
 }
@@ -270,27 +289,7 @@ h4, h5 {
 
 .task-completed {
   opacity: 0.7;
-}
-
-.task-completed h5 {
   text-decoration: line-through;
-}
-
-.task-completed::after {
-  content: '✓';
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  background: var(--success);
-  color: var(--text-primary);
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  animation: checkPulse 0.6s ease-out;
 }
 
 @keyframes checkPulse {

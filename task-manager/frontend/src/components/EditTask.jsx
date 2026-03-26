@@ -26,10 +26,10 @@ const EditTask = () => {
     fetchData()
   }, [id])
 
-  const handleSubmit = async (e) => {
+const handleSubmit = async (e) => {
     e.preventDefault()
     try {
-      const updateData = { ...task, completed: !task.completed }
+      const updateData = { ...task }
       await axios.patch(`/api/v1/tasks/${id}`, updateData)
       navigate('/?edited=true')
     } catch (error) {

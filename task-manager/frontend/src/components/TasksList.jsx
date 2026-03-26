@@ -12,10 +12,7 @@ const TasksList = ({ tasks, onDelete }) => {
         const { _id, completed, name } = task
         return (
           <div key={_id} className="glass-card single-task">
-            <h5 className={completed ? 'task-completed' : ''}>
-              <span>
-                <i className={`far ${completed ? 'fa-check-circle' : 'fa-circle'}`} ></i>
-              </span>
+            <h5 className={`task-name ${completed ? 'task-completed' : ''}`}>
               {name}
             </h5>
             <div className="task-links">
